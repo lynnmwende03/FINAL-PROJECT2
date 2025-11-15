@@ -1,5 +1,5 @@
 import React from "react";
-import "./NewInStore.css";
+import "./NewInstore.css";
 
 const items = [
   { id: 1, title: "Party Kits", image: "/images/birthday-party.jpg", caption: "Everything you need to throw a kid-friendly party" },
