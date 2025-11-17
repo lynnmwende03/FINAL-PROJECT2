@@ -6,7 +6,7 @@ import BirthdayParty from "./components/sections/BirthdayParty";
 import AllProducts from "./components/sections/AllProducts";
 import Testimonial from "./components/sections/Testimonial";
 import "./App.css";
-import NewInStore from "./components/sections/NewInstore";
+import NewInstore from "./components/sections/NewInstore";
 import CTA from "./components/sections/CTA";
 import Footer from "./components/layout/Footer";
 
