@@ -1,8 +1,9 @@
-# 🎂 Amora Bloom
+#  🎂 Amora Bloom
 
-A modern, responsive website for celebrating special birthday moments with personalized party planning and gift registry services.
+#http://final-project-2-q1g3.vercel.app/
 
 ## 📋 Overview
+A modern, responsive website for celebrating special birthday moments with personalized party planning and gift registry services.
 
 **Amora Bloom** is a React-based web application built with [Vite](https://vitejs.dev) that provides comprehensive birthday celebration services. The platform specializes in creating magical birthday experiences through custom party planning, gift registry services, and curated product offerings.
 
@@ -27,80 +28,8 @@ A modern, responsive website for celebrating special birthday moments with perso
 
 ---
 
-## 📁 Project Structure
-
-```
-Amora Bloom/
-├── public/                    # Static assets
-├── src/
-│   ├── components/
-│   │   ├── common/
-│   │   │   ├── Button.jsx     # Reusable button component
-│   │   │   └── Card.jsx       # Reusable card component
-│   │   ├── layout/
-│   │   │   ├── Header.jsx     # Navigation header
-│   │   │   ├── Footer.jsx     # Footer section
-│   │   │   └── layout.css     # Layout styles
-│   │   └── sections/
-│   │       ├── Hero.jsx       # Hero/banner section
-│   │       ├── Features.jsx   # Features showcase
-│   │       ├── BirthdayParty.jsx
-│   │       ├── AllProducts.jsx
-│   │       ├── NewInstore.jsx
-│   │       ├── Testimonial.jsx
-│   │       ├── CTA.jsx        # Call-to-action section
-│   │       ├── section.css    # Hero & section styles
-│   │       └── [section].css  # Individual section styles
-│   ├── assets/
-│   │   └── images/            # Image assets
-│   ├── App.jsx                # Main app component
-│   ├── App.css                # App-level styles
-│   ├── index.css              # Global styles
-│   └── main.jsx               # React entry point
-├── index.html                 # HTML entry point
-├── package.json               # Dependencies & scripts
-├── vite.config.js             # Vite configuration
-├── eslint.config.js           # ESLint rules
 └── .gitignore                 # Git ignored files
 ```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- **Node.js** 16+ 
-- **npm** or **yarn** package manager
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd "Amora Bloom"
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-   The application will open at `http://localhost:5173` (or the next available port)
-
----
-
-## 📦 Available Scripts
-
-| Script | Command | Description |
-|--------|---------|-------------|
-| **Dev** | `npm run dev` | Start Vite development server with hot module reload |
-| **Build** | `npm run build` | Build optimized production bundle |
-| **Preview** | `npm run preview` | Preview production build locally |
-| **Lint** | `npm run lint` | Run ESLint to check code quality |
 
 ---
 
@@ -156,28 +85,8 @@ Amora Bloom/
 3. Import and add component to `src/App.jsx`
 4. Ensure responsive design with media queries
 
-### Component Template
-```jsx
-import React from "react";
-import "./SectionName.css";
 
-const SectionName = () => {
-  return (
-    <section className="section-name">
-      {/* Your content here */}
-    </section>
-  );
-};
 
-export default SectionName;
-```
-
-### Code Quality
-- Run `npm run lint` before committing
-- Follow ESLint rules defined in `eslint.config.js`
-- Keep components small and focused on single responsibility
-
----
 
 ## 📱 Responsive Design
 
@@ -186,23 +95,6 @@ All sections include media queries for optimal viewing across devices:
 - **Tablet (768px–1024px)**: Adjusted spacing and font sizes
 - **Mobile (<768px)**: Single-column layouts, hidden navigation elements
 
-Example responsive pattern used:
-```css
-/* Desktop */
-.component { flex-direction: row; }
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .component { flex-direction: column; gap: 40px; }
-}
-
-/* Mobile */
-@media (max-width: 560px) {
-  .component { padding: 20px; font-size: clamp(14px, 4vw, 18px); }
-}
-```
-
----
 
 ## 🖼️ Assets & Images
 
