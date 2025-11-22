@@ -5,62 +5,48 @@ const AllProducts = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const products = [
-    {
-      id: 1,
-      name: "Party Balloons Pack",
-      price: "$75.00",
-      originalPrice: "$100.00",
-      image: "https://images.unsplash.com/photo-1599350458323-39e8e3dbd3ac?q=80&w=500&auto=format&fit=crop"
+ {
+      name: "Colorful Balloons",
+      price: 12,
+      oldPrice: 18,
+      image:
+        "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
     },
     {
-      id: 2,
-      name: "Party Chair Set",
-      price: "$50.00",
-      originalPrice: "$75.00",
-      image: "https://images.unsplash.com/photo-1580528142519-ead80881deff?q=80&w=500&auto=format&fit=crop"
+      name: "Birthday Cake",
+      price: 25,
+      oldPrice: 30,
+      image:
+        "https://images.unsplash.com/photo-1558301211-0d8c0f9fa1f9",
     },
     {
-      id: 3,
-      name: "Cake Display Stand",
-      price: "$30.00",
-      originalPrice: "$45.00",
-      image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=500&auto=format&fit=crop"
+      name: "Party Hats Pack",
+      price: 7.5,
+      oldPrice: 10,
+      image:
+        "https://images.unsplash.com/photo-1604014237800-d397d5f179b6",
     },
     {
-      id: 4,
-      name: "Party Bed Decor",
-      price: "$82.00",
-      originalPrice: "$110.00",
-      image: "https://images.unsplash.com/photo-1540932239986-7ffaaea56fdf?q=80&w=500&auto=format&fit=crop"
+      name: "Gift Bags Set",
+      price: 9,
+      oldPrice: 12,
+      image:
+        "https://images.unsplash.com/photo-1585669737065-9fddf5a02c97",
     },
     {
-      id: 5,
-      name: "Party Storage Box",
-      price: "$50.00",
-      originalPrice: "$75.00",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=500&auto=format&fit=crop"
+      name: "Confetti",
+      price: 5,
+      oldPrice: 8,
+      image:
+        "https://images.unsplash.com/photo-1530103862676-de8c9debad1d",
     },
     {
-      id: 6,
-      name: "Decoration Frame",
-      price: "$55.00",
-      originalPrice: "$80.00",
-      image: "https://images.unsplash.com/photo-1579182172519-e11f3e3a6dd1?q=80&w=500&auto=format&fit=crop"
+      name: "Birthday Banner",
+      price: 10,
+      oldPrice: 14,
+      image:
+        "https://images.unsplash.com/photo-1589219534449-15d3b8b1a29e",
     },
-    {
-      id: 7,
-      name: "Party Table Desk",
-      price: "$50.00",
-      originalPrice: "$100.00",
-      image: "https://images.unsplash.com/photo-1598928506323-70ce83fcdc1f?q=80&w=500&auto=format&fit=crop"
-    },
-    {
-      id: 8,
-      name: "Kids Party Crib",
-      price: "$225.00",
-      originalPrice: "$300.00",
-      image: "https://images.unsplash.com/photo-1584622614875-2f342474ddac?q=80&w=500&auto=format&fit=crop"
-    }
   ];
 
   const itemsPerSlide = 4;
