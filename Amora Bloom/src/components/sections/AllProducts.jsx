@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import "./AllProducts.css";
+import React from "react";
 
-const AllProducts = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+import "./Allproducts.css";
 
+export default function ProductGrid() {
   const products = [
- {
+    {
       name: "Colorful Balloons",
       price: 12,
       oldPrice: 18,
@@ -49,71 +48,17 @@ const AllProducts = () => {
     },
   ];
 
-  const itemsPerSlide = 4;
-  const totalSlides = Math.ceil(products.length / itemsPerSlide);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % totalSlides);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
-  };
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
-
-  const displayedProducts = products.slice(
-    currentSlide * itemsPerSlide,
-    currentSlide * itemsPerSlide + itemsPerSlide
-  );
-
   return (
-    <section className="all-products-section">
-      <div className="all-products-container">
-        <h2 className="all-products-title">All Product</h2>
-        <p className="all-products-subtitle">
-          The products we provide are only for you to on special are selected from the
-          best products with number 1 quality in the world
-        </p>
+    <section className="products">
+      <h1>Birthday Party Items</h1>
+      <p>Everything you need to create a fun and unforgettable birthday celebration!</p>
 
-        <div className="products-grid">
-          {displayedProducts.map((product) => (
-            <div key={product.id} className="product-card">
-              <div className="product-image">
-                <img src={product.image} alt={product.name} />
-              </div>
-              <h3 className="product-name">{product.name}</h3>
-              <div className="product-price">
-                <span className="current-price">{product.price}</span>
-                <span className="original-price">{product.originalPrice}</span>
-              </div>
-              <button className="add-to-cart">+</button>
-            </div>
-          ))}
-        </div>
-
-        <div className="pagination">
-          <button className="prev-btn" onClick={prevSlide}>
-            ‹
-          </button>
-          <div className="dots">
-            {Array.from({ length: totalSlides }).map((_, index) => (
-              <span
-                key={index}
-                className={`dot ${currentSlide === index ? "active" : ""}`}
-                onClick={() => goToSlide(index)}
-              ></span>
-            ))}
-          </div>
-          <button className="next-btn" onClick={nextSlide}>
-            ›
-          </button>
-        </div>
+      <div className="grid">
+        {products.map((item, index) => (
+          <ProductCard key={index} item={item} />
+        ))}
       </div>
     </section>
   );
-};
-
-export default AllProducts;
+}
+export default 
